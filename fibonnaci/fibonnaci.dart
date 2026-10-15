@@ -23,8 +23,7 @@ Future<String> fibonnaci(){
     int numbers = 8;
 
     for(int i = 2; i < numbers; i++){
-      int next = numberFibonnaci[i - 1] + numberFibonnaci[i - 2];
-      numberFibonnaci.add(next);
+      numberFibonnaci.add(numberFibonnaci[i - 1] + numberFibonnaci[i - 2]);
     };
 
     return numberFibonnaci.reversed.join();
